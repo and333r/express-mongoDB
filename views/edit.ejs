@@ -1,0 +1,14 @@
+<!doctype html>
+<html><head>
+ </head>
+<body>
+<form action="./<%=element._id%>" method="POST" >
+    Name: <input type="text" id="nombre" name="nombre" value="<%=element.item%>">
+    Qty: <input type="text" name="qty" value="<%=element.qty%>">
+    Size: <input type="text" name="size" value="<%=JSON.stringify(element.size)%>">
+    Status: <input type="text" name="status" value="<%=element.status%>">
+    <input type="Submit" value="Create">
+</form>
+
+</body>
+</html>
